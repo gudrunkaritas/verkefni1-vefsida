@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Forsíða</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Um Guðrúnu</a></li>
+							<li><a href="generic.html">Ferilskrá og reynsla</a></li>
+							<li class="active"><a href="elements.html">Verkefni 1</a></li>
+                            <li class="active"><a href="verkefni2.html">Verkefni 2</a></li>
+                            <li class="active"><a href="verkefni3.html">Verkefni 3</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Verkefni 3 -  3D prentun og 3D skönnun</h1>
+								</header>
+
+								<!-- Text stuff -->
+                                
+								    
+                                <h2>Undirbúningur</h2>
+                                <p>Þetta er verkefni þrjú í áfanganum VÉL403G, sem Hafliði Ásgeirsson kennir vorið 2021. Verkefnið er tvískipt, annars vegar er það einstaklingshlutinn og hóphlutinn.
+                                </p>
+                                
+                                <p>Í einstaklingshlutanum átti að hanna módel fyrir 3D prentun sem ekki væri hægt að framkvæma með frádráttar framleiðslu (addative vs subtractive). Prentaðu hlutinn (max 100g af plasti skv. slicer). Einnig átti að 3D skanna einhvern hlut, t.d. með photogrammetríu.
+                                </p>
+                                
+                                <p>Í hóphlutanum átti að velja 3D prentara og ákvarðið hönnunar reglur / þvinganir og skráið á sameiginlegu vefsvæði.
+                                </p>
+                                
+                                <h2>3D prentun</h2>
+                                <h3>Ákvarða hönnunar reglur / þvinganir á 3D prentara</h3>
+                                <p> Mikilvægt er að hafa hönnunar reglur / þvinganir á þeim 3D prentara sem varð fyrir valinu í huga þegar við hönnun á þeim hlut sem verður svo prentaður út. Ákveðnu módeli var hlaðið niður af netinu og það prentað út. Þennan hluta gerði ég með hópnum mínum, með Björgu Evu Steinþórdóttur og Andra Degi Ófeigssyni. <a href="https://ado15.github.io/Heimasida/project3H.html?fbclid=IwAR29tBPr_5t9Qa64XUjDJVMS-QZo8UKuRFfb29JDe9dwcdOr3_gaUHDm6AM">Hér</a> má sjá hvernig farið var að og afraksturinn. Eins og sjá má á link-num hér að ofan er kemur skekkja í módelið í 60 gráðum, þess vegna ákvað ég svo seinna í verkefninu að setja styrkingu á mína hönnun.
+                                    </p>
+                                    
+                                <h3>Vinna í Fusion 360</h3>
+                                <p>Mig langaði að prenta út hlut sem kæmi svo að góðum notum. Ég lendi oft í því að týna litlum eyrnalokkum og ákvað því að hanna eyrnalokkastand fyrir litla eyrnalokka. 
+                                    </p>
+                                <p>Ég byrjaði á að skilgreina "parameters". Á myndinni hér að neðan má bæði sjá hvar það var gert og hverjir þessir "parameters" voru.
+                                    </p>
+                                <span class="image fit"><img src="images/skilgreina-parametra-eyrnal.png" alt="" /></span>
+                                <span class="image fit"><img src="images/parametrar-eyrnalok.png" alt="" /></span>
+                                
+                                <p>Til að auðvelda hönnunina og til að tryggja að standurinn myndi koma út eins og ég vildi ákvað ég fyrst að teikna standinn upp í höndunum. Hér að neðan má sjá þá teikningu.
+                                </p>
+                                <span class="image fit"><img src="images/teikning-standur_1.jpg" alt="" /></span>
+                                <p>Ég vildi að þegar maður horfði á hlutinn frá hlið að botninn á standinum færi jafn mikið út og hallinn á þeim hluta sem maður setur eyrnalokkana á. Með hjálp "Amma Illa" setti ég því "parametrann" "horn" sem "acos(( breidd - thykkt ) / ( haed + runadar_hlidar ))". Hér að neðan má sjá hvernig hluturinn lítur út frá hlið.
+                                </p>
+                                <span class="image fit"><img src="images/standur-hlid.png" alt="" /></span>
+                                <p>Ég setti byrjaði svo að teikna botninn og notaði viðeigandi breytur. Þegar ég teiknaði þá hlið sem eyrnalokkarnir eru hengdir á byrjaði ég á að teikna kassa sem hafði hæðina "haed-runadar_hlidar". Þegar ég teiknaði þann hluta sem er blár á myndinni hér að neðan þá teiknaði ég tvo hringi, sitt hvoru meginn við hliðarnar. Sá hringur hafði radius upp á "runadar_hlidar". Hér að neðan má einnig sjá teikninguna af þeim hluta. Ég teiknaði svo línu á milli hringana og notaði "trim" sem er undir "modify" til þess að taka út þann hluta hringana sem ég vildi taka út, þ.e. alla nema þá sem afmarka þessa hlið. Síðan "extrude-aði" ég teikninguna um "thykkt". 
+                                    </p>
+                                <span class="image fit"><img src="images/blar-hluti-standur.png" alt="" /></span>
+                                <span class="image fit"><img src="images/teikning-standur-hringir.png" alt="" /></span>
+                                <p> Nú var komið að því að gera götin fyrir eyrnalokkana. Ég ákvað að það væri hægt að geyma 15 pör af eyrnalokkum á standinum. Neðstu tvær línurnar voru með aðeins lengra á milli, hvað varðar hæðina, þar sem ég hafði hugsað mér að geyma stærri eyrnalokka í seinustu tveimur línunum. Þá skilgreindi ég ég "parameters" bæði lengdina á milli para af eyrnalokkum og svo á milli parana. Það voru 12.5 mm á milli para og 7.5 mm á milli eyrnalokka í pari. 
+                                    </p>
+                                <p>Ég notaði skipmál til að mæla þvermálið á eyrnalokkum sem ég átti, það var 1mm, setti í 1,4mm í þvermál til þess að þetta yrði ekki of þröngt og til að tryggja að það væri auðvelt að festa eyrnalokkana í. Hér að neðan má sjá allar þær "constraints" sem voru sett á götin.</p>
+                                <span class="image fit"><img src="images/gotin-stadnur-constraints.png" alt="" /></span>
+                                <p>Hér að neðan má sjá teikninguna í heild sinni.
+                                    </p>
+                                <span class="image fit"><img src="images/standur-teikning-heild.png" alt="" /></span>
+                                    
+                                <h3>3D prentun</h3>
+                                <p>Ég ákvað að prenta í Ultimaker Extended. Ég var búin að vista hlutinn sem STL og fékk aðstoð frá kennara með að setja upp viðeigandi stillingar. Ákveðið var að setja vatnsleysanlegan stuðning til að tryggja að götin myndu koma rétt út þar sem þau voru mjög lítil. Hér að neðan má sjá mynd af styrkingunni.
+                                    </p>
+                                <span class="image fit"><img src="images/styrking-lokkar.jpg" alt="" /></span>
+                                <p>Þegar búið var að setja upp allar þær stillingar sem áttu að vera og búið að velja réttan 3D prentara, var teiknigin sett á minniskubb og farið með hann í prentarann. Hér fyrir neðan má sjá mynd af því þegar prentarinn var farinn af stað.</p>
+                                <span class="image fit"><img src="images/prentari-lokkar.jpg" alt="" /></span>
+                                
+                                <h3>Lokaniðurstaða</h3>
+                                <p>Verkefnið gekk vel fyrir sig, hér má sjá myndir af því hvernig eyrnalokkastandurinn leit út þegar hann kom úr prentaranum. Ég setti standinn svo í vatn þar sem styrkingin leystist upp.
+                                    </p>
+                                <span class="image fit"><img src="images/eyrnalokkastandur.jpg" alt="" /></span>
+                                <span class="image fit"><img src="images/eyrnalokk-i-vatni.jpg" alt="" /></span>
+                                <p>Þegar eyrnalokkastandurinn var svo búinn að vera í vatni í dágóðan tíma leit hann svona út.
+                                    </p>
+                                <span class="image fit"><img src="images/eyrnalokkastandur-tilbuin.jpg" alt="" /></span>
+                                    
+                                <h2>3D skönnun</h2>
+                                <h3>Undirbúningur</h3>
+                                <p>Ég hlóð niður forritinu 3D zephyr, hlekkin af forritinu má finna <a href="https://www.3dflow.net/3df-zephyr-free/">hér</a> . Ég hlóð niður ókeypis útgáfunni af forritinu, hún virkaði þó ekki fyrir Mac stýrikerfi og fékk ég því tölvu systur minnar lánaða til þess að framkvæma þennan hluta verkefnisins.</p>
+                                <p>Ég tók myndir af banana og hlóð inn á Google Drive til þess að tryggja að myndgæðin myndu haldast góð.</p>
+                                    <p>Á heimsíðu 3D zephyr má finna góð kennslumyndbönd, þau má finna <a href="https://www.3dflow.net/technology/documents/3df-zephyr-tutorials/?fbclid=IwAR1aYZ_o2GvGdW_2_lif0hxLXWIoq8SHDuYxZiqdg2WU2-WTuMZBe0vtjY0">hér</a>
+                                        </p>
+                                    
+                                <p>Ég hlóð niður myndunum og bjó til nýtt verkefni í 3D zephyr. Því næst hlóð ég myndunum inn á forritið, þá var 18 af þeim 50 myndum sem ég hlóð inn hafnað svo við gerð verkefnisins notaði ég 32 myndur. Þegar því var lokið fór í ég "advanced" undir "workflow" og valdi "Dense Point Cloud Generation". Þá valdi ég "Close Range" í "Category" og "Default" í "Presets". Hér fyrir neðan má sjá hvernig myndin leit þá út. </p>
+                                    
+                                <span class="image fit"><img src="images/gkb8-3d.PNG" alt="" /></span>
+                                
+                                <p>Því næst eyddi ég út þeim umhverfinu í kring um bananann. Hér að neðan má sjá myndir af honum þegar því var lokið.
+                                    </p>
+                                <span class="image fit"><img src="images/3d2.PNG" alt="" /></span>
+                                <span class="image fit"><img src="images/323.PNG" alt="" /></span>
+                                <span class="image fit"><img src="images/3d4.PNG" alt="" /></span>
+                                    
+                                <p>Eftir að hafa gert þetta verkefni myndi ég ráðleggja þeim sem ætla að 3D skanna að nota myndavél en ekki myndavélina úr símanum. Það reyndist erfitt að taka úr þá hluta sem áttu ekki að vera til staðar út þar sem myndgæðin voru ekki nógu góð og myndirnar ekki nógu skýrar.
+                                    </p>
+                                    
+                                    
+                        </section>
+                        
+                                
+                                
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							
+							<section>
+								<h3>Símanúmer</h3>
+								<p><a href="#">618-7472</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">gudrunkaritas@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
